@@ -1,0 +1,34 @@
+<h1>
+  Smart-typebox
+</h1>
+
+<br/>
+
+<label for="typeahead-focus">Search for a Country (starts with 'A'):</label>
+<input
+  id="typeahead-focus"
+  type="text"
+  class="form-control"
+  [(ngModel)]="selectedCountry"
+  [ngbTypeahead]="search"
+  (focus)="focus$.next($event.target.value)"
+  (click)="click$.next($event.target.value)"
+  (blur)="countriesZones($event)"
+/>
+<hr>
+<pre>Selected Country: {{ selectedCountry | json }}</pre>
+
+<hr>
+
+<label for="typeahead-focus-zone">Search for a Country zone:</label>
+<input
+  id="typeahead-focus-zone"
+  type="text"
+  class="form-control"
+  [(ngModel)]="selectedCountryZone"
+  [ngbTypeahead]="searchZone"
+  (focus)="focusZone$.next($event.target.value)"
+  (click)="clickZone$.next($event.target.value)"
+/>
+<hr>
+<pre>Selected Country zone : {{ selectedCountryZone | json }}</pre>
