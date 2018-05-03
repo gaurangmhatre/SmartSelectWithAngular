@@ -2,11 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
-# Results step 1
+## Results step 1
 
 ![alt text](https://github.com/gaurangmhatre/SmartSelectWithAngular/blob/master/img/SmartType1.jpg)
 
-# Results step 2
+## Results step 2
 
 ![alt text](https://github.com/gaurangmhatre/SmartSelectWithAngular/blob/master/img/SmartType2.jpg)
 
