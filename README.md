@@ -4,11 +4,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Results step 1
 
-![alt text](https://github.com/gaurangmhatre/SmartSelectWithAngular/master/img/SmartType1.jpg)
+![alt text](https://github.com/gaurangmhatre/SmartSelectWithAngular/blob/master/img/SmartType1.jpg)
 
 # Results step 2
 
-![alt text](https://github.com/gaurangmhatre/SmartSelectWithAngular/master/img/SmartType2.jpg)
+![alt text](https://github.com/gaurangmhatre/SmartSelectWithAngular/blob/master/img/SmartType2.jpg)
 
 ## Development server
 
