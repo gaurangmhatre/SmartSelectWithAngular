@@ -20,9 +20,7 @@ const countries = ['Afghanistan','Albania','Algeria','Andorra','Angola',
 export class SmartTypeboxComponent {
   selectedCountry: any;
   selectedCountryZone:any;
-  countriesZone:any =[ this.selectedCountry+"-1",this.selectedCountry+"-2", this.selectedCountry+"-3"]; 
-
-  citiesForTypeahead: any;
+  countriesZone:any;  
 
   @ViewChild('instance') instance: NgbTypeahead;
   focus$ = new Subject<string>();
@@ -43,14 +41,7 @@ export class SmartTypeboxComponent {
     .merge(this.focusZone$)
     .map(term => (term === '' ? this.countriesZone : this.countriesZone.filter(v => v.toLowerCase().indexOf(term.toLowerCase()) > -1)).slice(0, 10));
 
-  public countriesZones(event){
-    console.log("inside countriesZones : "+event.value)
-    this.countriesZone =[ this.selectedCountry+"-1",this.selectedCountry+"-2", this.selectedCountry+"-3"]; 
-    console.log( this.countriesZone);
+  public countriesZones(){ // This method is mocking service implementation for REST call.
+       this.countriesZone =[ this.selectedCountry+"-1",this.selectedCountry+"-2", this.selectedCountry+"-3"]; 
   }
-
-
-  
-
-
 }

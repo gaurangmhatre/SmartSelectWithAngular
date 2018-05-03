@@ -27,7 +27,7 @@
   class="form-control"
   [(ngModel)]="selectedCountryZone"
   [ngbTypeahead]="searchZone"
-  (focus)="focusZone$.next($event.target.value)"
+  (focus)="focusZone$.next($event.target.value); checkValue()"
   (click)="clickZone$.next($event.target.value)"
 />
 <hr>
