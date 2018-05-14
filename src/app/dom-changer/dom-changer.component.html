@@ -1,0 +1,16 @@
+
+<p>Name: {{name}}</p>
+<p>Age: {{age}}</p>
+<p>Address: {{address.street}} - {{address.state}}  - {{address.zipcode}}</p>
+
+<button (click)= "onClickAddToList()" >Click me </button>
+
+<ul>
+  <li *ngFor = "let hobby of hobbies"> {{hobby}}</li>
+</ul>
+
+
+<form>
+  <label for="Name">First Name</label>
+  <input type="text" [(ngModel)] = "name" name="Full Name">
+</form>
